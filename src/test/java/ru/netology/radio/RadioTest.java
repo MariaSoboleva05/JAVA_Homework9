@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class RadioTest {
 
     @Test
-    public void shouldSwitchToNextRadioStation() {
+    public void shouldTurnOnNextRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(8);
@@ -19,7 +19,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSwitchToNextRadioStation0IfCurrentIs9() {
+    public void shouldTurnOnNextRadioStation0() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(9);
@@ -30,7 +30,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSwitchToPrevRadioStation() {
+    public void shouldTurnOnPrevRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(8);
@@ -41,7 +41,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSwitchToPrevRadioStation9IfCurrentIs0() {
+    public void shouldTurnOnPrevRadioStation9() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(0);

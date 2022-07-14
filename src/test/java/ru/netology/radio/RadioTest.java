@@ -9,10 +9,10 @@ public class RadioTest {
     public void shouldTurnOnNextRadioStation() {
         Radio radio = new Radio();
 
-        radio.setCurrentRadioStation(8);
+        radio.setCurrentRadioStation(1);
         radio.nextRadioStation();
 
-        int expected = 9;
+        int expected = 2;
         int actual = radio.getCurrentRadioStation();
 
         Assertions.assertEquals(expected, actual);
@@ -86,7 +86,7 @@ public class RadioTest {
     public void shouldNotIncreaseVolumeAboveMax() {
         Radio radio = new Radio();
 
-        radio.setCurrentVolume(10);
+        radio.setCurrentVolume(11);
         radio.increaseVolume();
 
         int expected = 10;
